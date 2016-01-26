@@ -18,7 +18,7 @@ module FFaker
     end
 
     def zip_code
-      FFaker.numerify "#{POSTAL_CODE_PREFIX}-#{POSTAL_CODE_FORMAT}"
+      FFaker.numerify "#{POSTAL_CODE_PREFIX}-#{POSTAL_CODE_DIGITS}"
     end
     alias_method :postal_code, :zip_code
 
